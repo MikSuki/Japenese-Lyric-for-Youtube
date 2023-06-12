@@ -1,6 +1,6 @@
 {
   "name": "Japanese Lyric for Youtube",
-  "description": "Base Level Extension",
+  "description": "search lyric from utaten & display on youtube",
   "version": "1.0",
   "manifest_version": 3,
   "action": {
