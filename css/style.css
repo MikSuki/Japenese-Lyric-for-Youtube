@@ -1,0 +1,81 @@
+#lyricSwitch {
+    /* width: 100%; */
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(220, 220, 220, 100);
+    font-size: 2em;
+    width: 100%;
+    padding: 0.2em;
+}
+
+#lyricSwitch:hover {
+    background-color: rgba(197, 197, 197, 100);
+}
+
+#lyricBox {
+    display: block;
+    background-color: white;
+    /* height: 60vh; */
+    height: 0vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    font-size: 1.4em;
+    line-height: 2em;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+#lyricBox-title {
+    font-size: 1.5em;
+}
+
+#lyricBox-link {
+    /* right: 0; */
+    text-align: right;
+}
+
+.lyricFontBtn {
+    height: 5vh;
+    border-radius: 2px;
+    background-color: white;
+    border: solid #DDDDDD;
+    text-align: center;
+    margin: 3px 3px 3px 3px;
+}
+
+.lyricFontBtn:hover {
+    background-color: #DDDDDD;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+.lyricFontBtn_click {
+    border-color: rgb(238, 212, 128);
+}
+
+.line-div {
+    width: 100%;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid black
+}
+
+#lyricBox .jp {
+    display: inline-table;
+    position: relative;
+    vertical-align: bottom;
+}
+
+#lyricBox .jp .jpup {
+    display: table-header-group;
+    color: #AAAAAA;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 0.5em;
+}
+
+#lyricBox .jp .jpbot {
+    display: table-row;
+    position: relative;
+    line-height: 1.2;
+}
