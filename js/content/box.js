@@ -10,7 +10,8 @@ class Box {
      * create lyricBox
      */
     static init() {
-        // if (document.getElementById(NAME.id.box) != null)
+        if (Box.HTMLnode != null)
+            return
 
         const btn = document.createElement('button')
         btn.id = NAME.id.switch
@@ -36,7 +37,9 @@ class Box {
         const box = document.createElement('div')
         box.id = NAME.id.box
 
-        const secondary = document.getElementById('secondary')
+        
+        const secondarys = document.querySelectorAll('#secondary');
+        const secondary = secondarys[secondarys.length - 1]
         const secondaryInner = document.getElementById('secondary-inner')
         secondary.insertBefore(btn, secondaryInner)
         secondary.insertBefore(box, secondaryInner)
