@@ -1,7 +1,5 @@
 chrome.runtime.onMessage.addListener(
     function(request, sender, sendResponse) {
-        Box.clear()
-
         if (request.notfound) {
             console.log('no utaten')
             Box.notFound()
@@ -15,7 +13,9 @@ chrome.runtime.onMessage.addListener(
             Box.notFound()
             return
         }
-        
+
+        Box.init()
+        Box.clear()
         Box.build(Lyrics.title, Lyrics.url, Lyrics.getWords)
     }
 )
@@ -24,7 +24,6 @@ chrome.runtime.onMessage.addListener(
 document.addEventListener(
     'yt-navigate-finish',
     function() {
-        Box.init()
         chrome.runtime.sendMessage({ greeting: "zzz" })
     }
 );

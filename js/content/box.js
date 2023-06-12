@@ -29,11 +29,7 @@ class Box {
                 }
             }
         })();
-
-
-        if (Box.HTMLnode != null)
-            return
-
+       
         const box = document.createElement('div')
         box.id = NAME.id.box
 
@@ -61,7 +57,8 @@ class Box {
 
     /** the song was not found. */
     static notFound() {
-        Box.HTMLnode.innerHTML = 'not found'
+        if(Box.HTMLnode != null)
+            Box.HTMLnode.innerHTML = 'not found'
     }
 
     /**
