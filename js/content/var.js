@@ -34,7 +34,7 @@ const VALUE = {
         kanj: 1,
         none: 2
     },
-    similarity: 0.7,
+    similarity: 0.6,
 }
 
 const FLAG = {
