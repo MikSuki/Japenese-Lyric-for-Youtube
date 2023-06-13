@@ -14,14 +14,11 @@
     "128": "icon/JPLY_logo.png"
   },
   "host_permissions": [
-    "http://*/*",
-    "https://*/*",
+    "https://*.utaten.com/*",
+    "*://*.youtube.com/*",
     "https://www.google.com/*"
   ],
-  "permissions": [
-    "tabs"
-  ],
-  "content_scripts": [
+   "content_scripts": [
     {
       "all_frames": true,
       "matches": ["*://*.youtube.com/*"],
