@@ -15,6 +15,7 @@ function LCS(A, B) {
                 dp[i][j] = dp[i - 1][j - 1] + 1
             else
                 dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1])
+    // console.table(dp)
     // console.log(A)
     // console.log(B)
     // console.log(`similarity:  ${dp[m][n] / Math.min(m, n)}`)
